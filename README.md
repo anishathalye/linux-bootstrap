@@ -3,3 +3,70 @@
 This probably isn't useful to anyone, and I'm not really maintaining it as an
 open-source project. But I thought I'd keep it public in case anyone wants to
 see...
+
+Tested on Debian Jessie.
+
+## install and configure sudo
+
+```
+su
+aptitude install sudo
+usermod -aG sudo anish
+```
+
+## install programs
+
+```
+sudo aptitude update
+sudo aptitude install \
+    git mercurial vim htop axel aria2 silversearcher-ag \
+    build-essential libevent-dev libncurses-dev \
+    autojump
+```
+
+## build programs from source
+
+```
+mkdir -p ~/downloads
+
+cd ~/downloads
+wget 'https://github.com/tmux/tmux/releases/download/2.2/tmux-2.2.tar.gz'
+tar xvf tmux-2.2.tar.gz
+cd tmux-2.2
+./configure
+make -j12
+sudo make install
+
+cd ~/downloads
+wget 'http://downloads.sourceforge.net/project/zsh/zsh/5.2/zsh-5.2.tar.gz'
+tar xvf zsh-5.2.tar.gz
+cd zsh-5.2
+./configure
+make -j12
+sudo make install
+sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
+chsh -s /usr/local/bin/zsh
+```
+
+## set up a ssh key
+
+```
+ssh-keygen
+```
+
+Add `~/.ssh/id_rsa.pub` to GitHub account.
+
+## install dotfiles
+
+```
+mkdir -p ~/src
+cd ~/src
+git clone git@github.com:anishathalye/dotfiles
+cd dotfiles
+./install
+cd ~/src
+git clone git@github.com:anishathalye/dotfiles-local
+cd dotfiles-local
+git checkout linux-server
+./install
+```
