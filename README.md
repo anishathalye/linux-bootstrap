@@ -24,6 +24,14 @@ sudo aptitude install \
     autojump python-pip python-virtualenv python-dev
 ```
 
+### scientific computing
+
+```
+sudo aptitude install python-numpy python-scipy \
+    gfortran libblas-dev liblapack-dev \
+    libjpeg-dev zlib1g-dev
+```
+
 ## build programs from source
 
 ```
