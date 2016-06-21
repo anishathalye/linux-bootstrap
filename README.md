@@ -21,7 +21,7 @@ sudo aptitude update
 sudo aptitude install \
     git mercurial vim htop axel aria2 silversearcher-ag \
     build-essential libevent-dev libncurses-dev \
-    autojump
+    autojump python-pip python-virtualenv
 ```
 
 ## build programs from source
@@ -70,3 +70,19 @@ cd dotfiles-local
 git checkout linux-server
 ./install
 ```
+
+## gpu setup
+
+```
+cd ~/src/dotfiles-local
+git checkout gondor # has path setup for cuda stuff
+./install
+```
+
+* [CUDA toolkit](https://developer.nvidia.com/cuda-downloads)
+    * Get kernel headers first: `sudo aptitude install linux-headers-$(uname -r)`
+    * Using the Ubuntu `.run` file should work
+    * Reboot afterwards
+* [cuDNN](https://developer.nvidia.com/rdp/cudnn-download)
+    * Accelerated Computing Developer Program membership required
+    * Copy files to `/usr/local/cuda`
