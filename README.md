@@ -22,7 +22,7 @@ sudo aptitude install \
     git mercurial vim htop axel aria2 silversearcher-ag \
     build-essential libevent-dev libncurses-dev \
     autojump python-pip python-virtualenv python-dev \
-    vnstat
+    vnstat apt-transport-https
 ```
 
 ### scientific computing
