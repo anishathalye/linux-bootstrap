@@ -40,17 +40,17 @@ sudo aptitude install python-numpy python-scipy \
 mkdir -p ~/downloads
 
 cd ~/downloads
-wget 'https://github.com/tmux/tmux/releases/download/2.2/tmux-2.2.tar.gz'
-tar xvf tmux-2.2.tar.gz
-cd tmux-2.2
+wget 'https://github.com/tmux/tmux/releases/download/2.4/tmux-2.4.tar.gz'
+tar xvf tmux-2.4.tar.gz
+cd tmux-2.4
 ./configure
 make -j12
 sudo make install
 
 cd ~/downloads
-wget 'http://downloads.sourceforge.net/project/zsh/zsh/5.2/zsh-5.2.tar.gz'
-tar xvf zsh-5.2.tar.gz
-cd zsh-5.2
+wget 'https://downloads.sourceforge.net/project/zsh/zsh/5.3.1/zsh-5.3.1.tar.xz'
+tar xvf zsh-5.3.1.tar.xz
+cd zsh-5.3.1
 ./configure
 make -j12
 sudo make install
