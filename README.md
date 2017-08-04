@@ -10,26 +10,26 @@ Tested on Debian Jessie.
 
 ```
 su
-aptitude install sudo
+apt install sudo
 usermod -aG sudo anish
 ```
 
 ## install programs
 
 ```
-sudo aptitude update
-sudo aptitude install \
+sudo apt update
+sudo apt install \
     git mercurial vim htop iotop axel aria2 silversearcher-ag \
     build-essential libevent-dev libncurses-dev \
     autojump python-pip python-virtualenv python-dev \
-    vnstat apt-transport-https lm-sensors \
+    vnstat apt-transport-https lm-sensors bc \
     openjdk-7-jdk
 ```
 
 ### scientific computing
 
 ```
-sudo aptitude install python-numpy python-scipy \
+sudo apt install python-numpy python-scipy \
     gfortran libblas-dev liblapack-dev \
     libjpeg-dev zlib1g-dev
 ```
@@ -90,7 +90,7 @@ git checkout gondor # has path setup for cuda stuff
 ```
 
 * [CUDA toolkit](https://developer.nvidia.com/cuda-downloads)
-    * Get kernel headers first: `sudo aptitude install linux-headers-$(uname -r)`
+    * Get kernel headers first: `sudo apt install linux-headers-$(uname -r)`
     * Using the Ubuntu `.run` file should work
     * Reboot afterwards
 * [cuDNN](https://developer.nvidia.com/rdp/cudnn-download)
