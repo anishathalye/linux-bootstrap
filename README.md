@@ -89,6 +89,7 @@ git checkout gondor # has path setup for cuda stuff
 ./install
 ```
 
+* [NVIDIA drivers](http://www.nvidia.com/object/unix.html)
 * [CUDA toolkit](https://developer.nvidia.com/cuda-downloads)
     * Get kernel headers first: `sudo apt install linux-headers-$(uname -r)`
     * Using the Ubuntu `.run` file should work
