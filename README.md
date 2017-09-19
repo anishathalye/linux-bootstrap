@@ -4,7 +4,7 @@ This probably isn't useful to anyone, and I'm not really maintaining it as an
 open-source project. But I thought I'd keep it public in case anyone wants to
 see...
 
-Tested on Debian Jessie.
+Tested on Debian Jessie and Debian Stretch.
 
 ## install and configure sudo
 
@@ -13,6 +13,29 @@ su
 apt install sudo
 usermod -aG sudo anish
 ```
+
+## enable non-free components
+
+Edit `/etc/apt/sources.list` and add `non-free` to the end of all the lines.
+
+## machine-specific
+
+### ithilien
+
+```
+sudo apt install firmware-realtek
+```
+
+## set up dynamic dns
+
+Look at "quick cron example".
+
+## ssh server
+
+Add ssh key to `~/.ssh/authorized_keys`.
+
+Disable SSH password login in `/etc/ssh/sshd_config` by setting
+`PasswordAuthentication no`.
 
 ## install programs
 
@@ -23,7 +46,7 @@ sudo apt install \
     build-essential libevent-dev libncurses-dev \
     autojump python-pip python-virtualenv python-dev \
     vnstat apt-transport-https lm-sensors bc \
-    openjdk-7-jdk
+    openjdk-8-jdk rsync
 ```
 
 ### scientific computing
@@ -40,17 +63,17 @@ sudo apt install python-numpy python-scipy \
 mkdir -p ~/downloads
 
 cd ~/downloads
-wget 'https://github.com/tmux/tmux/releases/download/2.4/tmux-2.4.tar.gz'
-tar xvf tmux-2.4.tar.gz
-cd tmux-2.4
+wget 'https://github.com/tmux/tmux/releases/download/2.5/tmux-2.5.tar.gz'
+tar xvf tmux-2.5.tar.gz
+cd tmux-2.5
 ./configure
 make -j12
 sudo make install
 
 cd ~/downloads
-wget 'https://downloads.sourceforge.net/project/zsh/zsh/5.3.1/zsh-5.3.1.tar.xz'
-tar xvf zsh-5.3.1.tar.xz
-cd zsh-5.3.1
+wget 'https://downloads.sourceforge.net/project/zsh/zsh/5.4.1/zsh-5.4.1.tar.xz'
+tar xvf zsh-5.4.1.tar.xz
+cd zsh-5.4.1
 ./configure
 make -j12
 sudo make install
@@ -61,7 +84,7 @@ chsh -s /usr/local/bin/zsh
 ## set up a ssh key
 
 ```
-ssh-keygen
+ssh-keygen -t rsa -b 4096
 ```
 
 Add `~/.ssh/id_rsa.pub` to GitHub account.
