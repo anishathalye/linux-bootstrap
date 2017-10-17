@@ -54,7 +54,7 @@ sudo apt install \
 ```
 sudo apt install python-numpy python-scipy \
     gfortran libblas-dev liblapack-dev \
-    libjpeg-dev zlib1g-dev
+    libjpeg-dev zlib1g-dev python-opencv
 ```
 
 ## build programs from source
