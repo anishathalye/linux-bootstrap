@@ -108,7 +108,7 @@ git checkout linux-server
 
 ```
 cd ~/src/dotfiles-local
-git checkout gondor # has path setup for cuda stuff
+git checkout labsix # has path setup for cuda stuff
 ./install
 ```
 
