@@ -63,17 +63,17 @@ sudo apt install python-numpy python-scipy \
 mkdir -p ~/downloads
 
 cd ~/downloads
-wget 'https://github.com/tmux/tmux/releases/download/2.5/tmux-2.5.tar.gz'
-tar xvf tmux-2.5.tar.gz
-cd tmux-2.5
+wget 'https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz'
+tar xvf tmux-2.6.tar.gz
+cd tmux-2.6
 ./configure
 make -j12
 sudo make install
 
 cd ~/downloads
-wget 'https://downloads.sourceforge.net/project/zsh/zsh/5.4.1/zsh-5.4.1.tar.xz'
-tar xvf zsh-5.4.1.tar.xz
-cd zsh-5.4.1
+wget 'https://downloads.sourceforge.net/project/zsh/zsh/5.4.2/zsh-5.4.2.tar.xz'
+tar xvf zsh-5.4.2.tar.xz
+cd zsh-5.4.2
 ./configure
 make -j12
 sudo make install
@@ -108,7 +108,7 @@ git checkout linux-server
 
 ```
 cd ~/src/dotfiles-local
-git checkout labsix # has path setup for cuda stuff
+git checkout gpu
 ./install
 ```
 
