@@ -26,6 +26,12 @@ Edit `/etc/apt/sources.list` and add `non-free` to the end of all the lines.
 sudo apt install firmware-realtek
 ```
 
+### mordor (r710)
+
+```
+sudo apt install firmware-bnx2
+```
+
 ## set up dynamic dns
 
 Look at "quick cron example".
