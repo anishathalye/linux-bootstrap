@@ -29,12 +29,12 @@ sudo apt install firmware-realtek
 ### mordor (r710)
 
 ```
-sudo apt install firmware-bnx2
+sudo apt install firmware-bnx2 firmware-qlogic
 ```
 
-**This firmware is required to use the NICs at all, so it's needed during
-install to configure the network. Using the Debian distribution that includes
-non-free firmware should solve this problem.**
+**This firmware (bnx2) is required to use the NICs at all, so it's needed
+during install to configure the network. Using the Debian distribution that
+includes non-free firmware solves this problem (because it includes bnx2).**
 
 ## set up dynamic dns
 
