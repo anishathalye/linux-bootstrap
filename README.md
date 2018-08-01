@@ -73,19 +73,19 @@ sudo apt install python-numpy python-scipy \
 mkdir -p ~/downloads
 
 cd ~/downloads
-wget 'https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz'
-tar xvf tmux-2.6.tar.gz
-cd tmux-2.6
+wget 'https://github.com/tmux/tmux/releases/download/2.7/tmux-2.7.tar.gz'
+tar xvf tmux-2.7.tar.gz
+cd tmux-2.7
 ./configure
-make -j12
+make -j
 sudo make install
 
 cd ~/downloads
-wget 'https://downloads.sourceforge.net/project/zsh/zsh/5.4.2/zsh-5.4.2.tar.xz'
-tar xvf zsh-5.4.2.tar.xz
-cd zsh-5.4.2
+wget 'https://downloads.sourceforge.net/project/zsh/zsh/5.5.1/zsh-5.5.1.tar.xz'
+tar xvf zsh-5.5.1.tar.xz
+cd zsh-5.5.1
 ./configure
-make -j12
+make -j
 sudo make install
 sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
 chsh -s /usr/local/bin/zsh
