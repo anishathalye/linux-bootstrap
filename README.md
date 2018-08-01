@@ -32,6 +32,10 @@ sudo apt install firmware-realtek
 sudo apt install firmware-bnx2
 ```
 
+**This firmware is required to use the NICs at all, so it's needed during
+install to configure the network. Using the Debian distribution that includes
+non-free firmware should solve this problem.**
+
 ## set up dynamic dns
 
 Look at "quick cron example".
