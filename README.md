@@ -55,8 +55,7 @@ sudo apt install \
     git mercurial vim htop iotop axel aria2 silversearcher-ag \
     build-essential libevent-dev libncurses-dev \
     autojump python-pip python-virtualenv python-dev \
-    vnstat apt-transport-https lm-sensors bc \
-    openjdk-8-jdk rsync
+    vnstat lm-sensors bc rsync
 ```
 
 ### scientific computing
