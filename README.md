@@ -20,7 +20,7 @@ Edit `/etc/apt/sources.list` and add `non-free` to the end of all the lines.
 
 ## machine-specific
 
-### ithilien
+### bongo (AMD A8-3850)
 
 ```
 sudo apt install firmware-realtek
