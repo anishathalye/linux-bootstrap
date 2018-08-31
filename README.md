@@ -52,7 +52,7 @@ Disable SSH password login in `/etc/ssh/sshd_config` by setting
 ```
 sudo apt update
 sudo apt install \
-    git mercurial vim htop iotop axel aria2 silversearcher-ag \
+    curl git mercurial vim htop iotop axel aria2 silversearcher-ag \
     build-essential libevent-dev libncurses-dev \
     autojump python-pip python-virtualenv python-dev \
     vnstat lm-sensors bc rsync
