@@ -93,10 +93,13 @@ chsh -s /usr/local/bin/zsh
 ## set up a ssh key
 
 ```
-ssh-keygen -t rsa -b 4096
+ssh-keygen -t ed25519 -a 100
 ```
 
-Add `~/.ssh/id_rsa.pub` to GitHub account.
+Note that the `-a 100` is the number of rounds of the KDF to use, so it doesn't
+matter for an unencrypted key.
+
+Add `~/.ssh/id_ed25519.pub` to GitHub account.
 
 ## install dotfiles
 
