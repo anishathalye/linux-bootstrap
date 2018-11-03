@@ -4,7 +4,7 @@ This probably isn't useful to anyone, and I'm not really maintaining it as an
 open-source project. But I thought I'd keep it public in case anyone wants to
 see...
 
-Tested on Debian Jessie and Debian Stretch.
+Tested on Debian Stretch.
 
 ## install and configure sudo
 
@@ -55,7 +55,8 @@ sudo apt install \
     curl git mercurial vim htop iotop axel aria2 silversearcher-ag \
     build-essential libevent-dev libncurses-dev \
     autojump python-pip python-virtualenv python-dev \
-    vnstat lm-sensors bc rsync
+    vnstat lm-sensors bc rsync \
+    tmux zsh
 ```
 
 ### scientific computing
@@ -66,28 +67,10 @@ sudo apt install python-numpy python-scipy \
     libjpeg-dev zlib1g-dev python-opencv
 ```
 
-## build programs from source
+## set default shell
 
 ```
-mkdir -p ~/downloads
-
-cd ~/downloads
-wget 'https://github.com/tmux/tmux/releases/download/2.7/tmux-2.7.tar.gz'
-tar xvf tmux-2.7.tar.gz
-cd tmux-2.7
-./configure
-make -j
-sudo make install
-
-cd ~/downloads
-wget 'https://downloads.sourceforge.net/project/zsh/zsh/5.5.1/zsh-5.5.1.tar.xz'
-tar xvf zsh-5.5.1.tar.xz
-cd zsh-5.5.1
-./configure
-make -j
-sudo make install
-sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
-chsh -s /usr/local/bin/zsh
+chsh -s /usr/bin/zsh
 ```
 
 ## set up a ssh key
