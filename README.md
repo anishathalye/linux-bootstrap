@@ -56,7 +56,7 @@ sudo apt install \
     build-essential pkg-config libevent-dev libncurses-dev \
     autojump python-pip python-virtualenv python-dev \
     vnstat lm-sensors bc rsync \
-    tmux zsh
+    zsh
 ```
 
 ### scientific computing
