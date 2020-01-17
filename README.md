@@ -56,7 +56,7 @@ sudo apt install \
     build-essential pkg-config libevent-dev libncurses-dev \
     autojump python-pip python-virtualenv python-dev \
     vnstat lm-sensors bc rsync \
-    zsh
+    zsh tmux
 ```
 
 ### scientific computing
@@ -65,20 +65,6 @@ sudo apt install \
 sudo apt install python-numpy python-scipy \
     gfortran libblas-dev liblapack-dev \
     libjpeg-dev zlib1g-dev python-opencv
-```
-
-## build programs from source
-
-```
-mkdir -p ~/downloads
-
-cd ~/downloads
-wget 'https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz'
-tar xvf tmux-2.8.tar.gz
-cd tmux-2.8
-./configure
-make -j
-sudo make install
 ```
 
 ## set default shell
