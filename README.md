@@ -53,10 +53,9 @@ Disable SSH password login in `/etc/ssh/sshd_config` by setting
 sudo apt update
 sudo apt install \
     curl git mercurial vim htop iotop axel aria2 silversearcher-ag \
-    build-essential pkg-config libevent-dev libncurses-dev \
+    build-essential pkg-config \
     autojump python-pip python-virtualenv python-dev \
-    vnstat lm-sensors bc rsync \
-    zsh tmux
+    vnstat lm-sensors rsync zsh tmux
 ```
 
 ### scientific computing
