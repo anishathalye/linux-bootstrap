@@ -4,7 +4,7 @@ This probably isn't useful to anyone, and I'm not really maintaining it as an
 open-source project. But I thought I'd keep it public in case anyone wants to
 see...
 
-Tested on Debian Stretch.
+Tested on Debian Buster
 
 ## install and configure sudo
 
@@ -16,9 +16,15 @@ usermod -aG sudo anish
 
 ## enable non-free components
 
-Edit `/etc/apt/sources.list` and add `non-free` to the end of all the lines.
+Edit `/etc/apt/sources.list` and add `contrib` and `non-free` to the end of all the lines.
 
 ## machine-specific
+
+### gondor
+
+```
+sudo apt install intel-microcode
+```
 
 ### bongo (AMD A8-3850)
 
