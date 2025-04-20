@@ -60,7 +60,7 @@ sudo apt update
 sudo apt install \
     curl git mercurial vim htop iotop axel aria2 silversearcher-ag \
     build-essential pkg-config \
-    autojump python-pip python-virtualenv python-dev \
+    autojump python3-pip python3-venv python3-dev \
     vnstat lm-sensors rsync zsh tmux
 ```
 
